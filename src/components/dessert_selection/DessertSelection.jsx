@@ -115,9 +115,23 @@ const recommendations = [
 
 const DessertSelection = () => {
     function getDessertRecommendation(emotion, energy) {
-        const recommendation = recommendations.find(rec =>
-            rec.emotion === emotion && rec.energy === energy
-        );
+        let desserts = [];
+        let index = Math.floor(Math.random() * 3);
+        recommendations.forEach((rec) => {
+            if (rec.emotion == emotion && rec.energy == energy) {
+
+                desserts.push(rec);
+            }
+
+        })
+
+        let recommendation = desserts[index];
+
+
+        // const recommendation = recommendations.find(rec =>
+        //     rec.emotion === emotion && rec.energy === energy
+        // );
+
         return recommendation ? recommendation : "No se encuentra recomendacion.";
     }
     // You can define variables or state here
