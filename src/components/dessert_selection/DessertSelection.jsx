@@ -14,7 +14,6 @@ import Fade from '@mui/material/Fade';
 import Typography from '@mui/material/Typography';
 
 
-// img
 import chcafe from "../../assets/cheesecafe.jpg";
 import chlimon from "../../assets/cheeselimon.jpg";
 import chrojos from "../../assets/cheeserojos.jpg";
